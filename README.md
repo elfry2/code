@@ -2,7 +2,7 @@
 The perfect code editor--not. It's a script to automate the installation of my minimal vim configuration.
 
 ## Installation
-Execute ```https://github.com/junegunn/vim-plug.git && cd vim-plug && ./main```.
+Execute ```git clone https://github.com/elfry2/kaku.git && cd kaku && ./main```.
 
 ## Usage
 Execute ```vim```.
