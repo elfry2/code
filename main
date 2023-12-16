@@ -15,4 +15,7 @@ cp -v vimrc ~/.vimrc
 # Copy the plugin list file to home directory.
 cp -v vundles ~/.vim/vundles
 
-echo "To complete the installation, execute ':PluginInstall' the next time you run vim."
+# Install plugins
+vim +PluginInstall +qall
+
+echo "Kaku installed."

@@ -1,3 +1,4 @@
+" To learn about how to use plugins, visit https://opensource.com/article/20/2/how-install-vim-plugins.
 " Find cool plugins on https://vimawesome.com/.
 
 Plugin 'Raimondi/delimitMate'
