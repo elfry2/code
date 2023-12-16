@@ -3,10 +3,10 @@
 # Attempt to install vim with scripting language support using APT.
 sudo apt install --assume-yes python3-dev vim-gtk3
 
-# Remove old Vundle
+# Remove old Vundle.
 sudo rm -rv ~/.vim/bundle/Vundle.vim
 
-# Install Vundle
+# Install Vundle.
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Copy the vimrc to home directory.
@@ -15,7 +15,7 @@ cp -v vimrc ~/.vimrc
 # Copy the plugin list file to home directory.
 cp -v vundles ~/.vim/vundles
 
-# Install plugins
+# Install plugins.
 vim +PluginInstall +qall
 
 echo "Kaku installed."
