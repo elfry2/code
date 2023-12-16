@@ -1,0 +1,11 @@
+" Find cool plugins on https://vimawesome.com/.
+
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'mattn/emmet-vim'
+Plugin 'yggdroot/indentline'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'

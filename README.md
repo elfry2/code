@@ -8,4 +8,4 @@ Execute ```git clone https://github.com/elfry2/kaku.git && cd kaku && ./main```.
 Execute ```vim```.
 
 ## Configuration
-Plugins are managed using [vim-plug](https://github.com/junegunn/vim-plug). The installed plugins are listed in ```~/.vim/vim-plug-plugins```.
+Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim). The installed plugins are listed in ```~/.vim/vundles```.
