@@ -1,7 +1,7 @@
 # kaku
 The perfect code editor--not. It's a script to automate the installation of my vim configuration on Debian.
 
-![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-18%2001-01-29.png "A screenshot of the latest version")
+![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-18%2004-24-26.png "A screenshot of the latest version")
 
 ## Installation
 To install kaku and compile all plugins that need compilation, execute ```git clone https://github.com/elfry2/kaku.git && cd kaku && ./main```. The compilation takes quite some time, so you may want to skip it later after running it once by appending ```--no-compile```.
