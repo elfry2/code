@@ -79,6 +79,7 @@ set wrapmargin=0
 set wrap!
 
 " Set ultisnip triggers.
+" Found on https://github.com/SirVer/ultisnips.
 " ENTER is used instead of TAB because the latter is reserved by YouCompleteMe menu.
 "let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsExpandTrigger="<CR>"
@@ -90,5 +91,25 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:delimitMate_expand_cr = 1
 
 " Enable indent guides.
+" Found on https://github.com/preservim/vim-indent-guides.
 let g:indent_guides_enable_on_vim_startup = 1
 set background=dark
+
+" Enable wilder wildmenu.
+" Found on https://github.com/gelguy/wilder.nvim.
+call wilder#setup({'modes': [':', '/', '?']})
+call wilder#set_option('renderer', wilder#popupmenu_renderer({
+      \ 'highlighter': wilder#basic_highlighter(),
+      \ }))
+
+" Start NERDTree and put the cursor back in the other window.
+" Found on https://vimawesome.com/plugin/nerdtree-red.
+autocmd VimEnter * NERDTree | wincmd p
+
+" Use gruvbox theme.
+" Found on https://github.com/morhetz/gruvbox/wiki/Installation.
+autocmd vimenter * ++nested colorscheme gruvbox
+
+" Enable mouse
+" Found on https://vimtricks.com/p/using-a-mouse-in-vim/.
+set mouse=a

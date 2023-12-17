@@ -1,5 +1,5 @@
 # kaku
-The perfect code editor--not. It's a script to automate the installation of my minimal vim configuration.
+The perfect code editor--not. It's a script to automate the installation of my vim configuration.
 
 ## Installation
 To install kaku with YouCompleteMe plugin included, simply execute ```git clone https://github.com/elfry2/kaku.git && cd kaku && ./main```.
