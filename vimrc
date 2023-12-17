@@ -78,7 +78,7 @@ set textwidth=0
 set wrapmargin=0
 set wrap!
 
-" Set ultisnip triggers
+" Set ultisnip triggers.
 " ENTER is used instead of TAB because the latter is reserved by YouCompleteMe menu.
 "let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsExpandTrigger="<CR>"
