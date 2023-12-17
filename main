@@ -3,7 +3,7 @@
 # Attempt to install vim with scripting language support using APT.
 sudo apt install --assume-yes vim-gtk3 python3-dev
 
-# Backup the current .vimrc
+# Backup the current .vimrc .
 mv -v ~/.vimrc ~/.vimrc.backup
 
 # Install Vundle.
@@ -11,7 +11,7 @@ sudo rm -rv ~/.vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Copy the new vimrc to home directory.
-cp -v 1.vimrc ~/.vimrc
+cp -v vundle-init.vimrc ~/.vimrc
 
 # Copy the plugin list file to home directory.
 cp -v vundles ~/.vim/vundles
@@ -19,8 +19,9 @@ cp -v vundles ~/.vim/vundles
 # Install plugins.
 vim +PluginInstall +qall
 
-# Append the content of vimrc2 to the new vimrc.
-cat 2.vimrc >> ~/.vimrc
+# Append the remaining vimrc's.
+cat plugin-config.vimrc >> ~/.vimrc
+cat builtin-config.vimrc >> ~/.vimrc
 
 # Compile plugins.
 if [ ! "$1" == "--no-compile" ]; then
