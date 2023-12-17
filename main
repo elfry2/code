@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Install Hack Nerd font.
+wget -O hacknerd.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
+sudo mkdir -p /usr/share/fonts/truetype/hacknerd
+sudo unzip -o hacknerd.zip -d /usr/share/fonts/truetype/hacknerd
+sudo fc-cache -fv
+rm -rv hacknerd.zip
+
 # Attempt to install vim with scripting language support using APT.
 sudo apt install --assume-yes vim-gtk3 python3-dev fonts-powerline
 
