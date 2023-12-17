@@ -110,6 +110,6 @@ autocmd VimEnter * NERDTree | wincmd p
 " Found on https://github.com/morhetz/gruvbox/wiki/Installation.
 autocmd vimenter * ++nested colorscheme gruvbox
 
-" Enable mouse
+" Enable mouse.
 " Found on https://vimtricks.com/p/using-a-mouse-in-vim/.
 set mouse=a
