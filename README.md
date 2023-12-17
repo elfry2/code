@@ -23,4 +23,4 @@ Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim) and 
 
 ## Troubleshooting
 ### Airline arrows not showing; only rectangles
-See [this issue](https://github.com/vim-airline/vim-airline/issues/1688).
+Follow the instruction on [this issue](https://github.com/vim-airline/vim-airline/issues/1688).
