@@ -78,8 +78,10 @@ set textwidth=0
 set wrapmargin=0
 set wrap!
 
-" Set ultisnip triggers.
-let g:UltiSnipsExpandTrigger="<tab>"
+" Set ultisnip triggers
+" ENTER is used instead of TAB because the latter is reserved by YouCompleteMe menu.
+"let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<CR>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
@@ -89,3 +91,4 @@ let g:delimitMate_expand_cr = 1
 
 " Enable indent guides.
 let g:indent_guides_enable_on_vim_startup = 1
+set background=dark
