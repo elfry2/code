@@ -19,6 +19,6 @@ cp -v vundles ~/.vim/vundles
 vim +PluginInstall +qall
 
 # Install YouCompleteMe.
-./install-ycm
+source install-ycm
 
 echo "kaku installed."

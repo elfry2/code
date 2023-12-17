@@ -46,6 +46,11 @@ filetype plugin indent on    " required
  
 " -----------------------------------------------------------------------------
 
+" Non-plugin configuration goes below.
+" Before adding anything, check whether there's already a plugin to do
+" the task.
+" Plugins are to be registered in ~/.vim/vundles .
+
 " Turn on syntax highlighting.
 " Found in https://linuxhandbook.com/syntax-highlight-vim/.
 syntax on
@@ -66,10 +71,6 @@ set cindent
 " Show line number.
 " Found on https://www.cyberciti.biz/faq/how-to-display-line-number-in-vim/.
 set number
-
-" Display vertical line at each indentation level.
-" Found on https://vimawesome.com/plugin/indentline.
-:set list lcs=tab:\|\ 
 
 " Disable line wrapping.
 " Found on https://stackoverflow.com/questions/1290285/why-cant-i-stop-vim-from-wrapping-my-code. 
