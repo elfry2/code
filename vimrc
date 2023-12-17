@@ -46,7 +46,7 @@ filetype plugin indent on    " required
  
 " -----------------------------------------------------------------------------
 
-" Non-plugin configuration goes below.
+" Non-plugin-manager configuration goes below.
 " Before adding anything, check whether there's already a plugin to do
 " the task.
 " Plugins are to be registered in ~/.vim/vundles .
