@@ -34,7 +34,7 @@ call wilder#set_option('renderer', wilder#popupmenu_renderer({
 " Set NERDTree toggle button.
 " 
 " Found on https://github.com/preservim/nerdtree.
-nnoremap tt :NERDTreeToggle<CR>
+nnoremap tr :NERDTreeToggle<CR>
 
 "
 " Use gruvbox color scheme.
