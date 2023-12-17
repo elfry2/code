@@ -5,6 +5,7 @@ The perfect code editor--not. It's a script to automate the installation of my m
 To install kaku with YouCompleteMe plugin included, simply execute ```git clone https://github.com/elfry2/kaku.git && cd kaku && ./main```.
 
 To exclude the plugin, comment out ```Plugin 'ycm-core/YouCompleteMe'``` in ```./vundles``` and ```source install-ycm``` in ```./main```.
+
 ## Usage
 Execute ```vim```.
 

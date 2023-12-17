@@ -86,3 +86,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " Enable delimitMate code block indentation.
 " Found on https://stackoverflow.com/questions/9621173/vim-and-indentation-with-brackets-braces.
 let g:delimitMate_expand_cr = 1
+
+" Enable indent guides.
+let g:indent_guides_enable_on_vim_startup = 1
