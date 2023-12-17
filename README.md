@@ -22,4 +22,4 @@ Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim) and 
 - Expand snippets -> ```;``` in insert mode
 
 ## Troubleshooting
-**Airline arrows not showing; only rectangles.** Follow the instruction on [this issue](https://github.com/vim-airline/vim-airline/issues/1688).
+- **Airline arrows not showing; only rectangles.** Follow the instruction on [this issue](https://github.com/vim-airline/vim-airline/issues/1688).
