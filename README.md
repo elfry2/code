@@ -19,4 +19,4 @@ Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim) and 
 ## Remaps 
 - ```<ESC>``` -> ```kj``` in insert and visual mode
 - Expand snippets -> ```;``` in insert mode
-- Toggle NERDTree -> ````Ctrl+t``` in normal mode
+- Toggle NERDTree -> ```Ctrl+t``` in normal mode
