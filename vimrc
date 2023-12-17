@@ -93,6 +93,7 @@ let g:delimitMate_expand_cr = 1
 " Enable indent guides.
 " Found on https://github.com/preservim/vim-indent-guides.
 let g:indent_guides_enable_on_vim_startup = 1
+colorscheme gruvbox
 set background=dark
 
 " Enable wilder wildmenu.
