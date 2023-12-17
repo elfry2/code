@@ -1,12 +1,8 @@
 # kaku
-The perfect code editor--not. It's a script to automate the installation of my vim configuration on Debian.
-
-![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-17%2017-38-49.png "A screenshot of the latest version")
+The perfect code editor--not. It's a script to automate the installation of my minimal vim configuration.
 
 ## Installation
-To install kaku with YouCompleteMe plugin included, simply execute ```git clone https://github.com/elfry2/kaku.git && cd kaku && ./main```.
-
-To exclude the plugin, comment out ```Plugin 'ycm-core/YouCompleteMe'``` in ```./vundles``` and ```source install-ycm``` in ```./main```.
+Execute ```git clone https://github.com/elfry2/kaku.git && cd kaku && ./main```.
 
 ## Usage
 Execute ```vim```.
@@ -16,4 +12,4 @@ To learn vim basics, read [this article](https://www.linuxfoundation.org/blog/bl
 To learn about how to use plugins, read [this article](https://opensource.com/article/20/2/how-install-vim-plugins).
 
 ## Configuration
-Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim) and registered in ```~/.vim/vundles```.
+Plugins are managed using [vim-plug](https://github.com/junegunn/vim-plug) and registered in ```~/.vim/plugs```.

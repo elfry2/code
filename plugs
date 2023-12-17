@@ -1,0 +1,8 @@
+"
+" To learn about how to use plugins, visit https://opensource.com/article/20/2/how-install-vim-plugins.
+"
+" Install plugins only if necessary. They conflict very easily.
+" 
+" Find cool plugins on https://vimawesome.com/.
+
+Plug 'Raimondi/delimitMate'

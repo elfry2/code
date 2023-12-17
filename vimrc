@@ -1,116 +1,80 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Make sure you use single quotes
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+"Plug 'junegunn/vim-easy-align'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
+" Any valid git URL is allowed
+"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
-source ~/.vim/vundles
+" Multiple "Plug commands can be written in a single line using | separators
+"Plug 'SirVer/ultisnips' | "Plug 'honza/vim-snippets'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
- 
+" On-demand loading
+"Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+"Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-default branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+"Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+"Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+"Plug '~/my-prototype-plugin'
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+
+source ~/.vim/plugs
+
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
+
 " -----------------------------------------------------------------------------
+"
+" Configuration goes below. Remember to keep it minimal. It conflicts very
+" easily.
+"
+" Before adding anything, check whether there's a plugin to do the task
+" already.
+"
+" Plugins are to be managed with vim-plug and registered in ~/.vim/plugs .
 
-" Non-plugin-manager configuration goes below.
-" Before adding anything, check whether there's already a plugin to do
-" the task.
-" Plugins are to be managed using Vundle and registered in ~/.vim/vundles .
-
-" Turn on syntax highlighting.
-" Found in https://linuxhandbook.com/syntax-highlight-vim/.
-syntax on
-
-" Use narrower tab width.
-" Found on https://stackoverflow.com/a/57708527. 
+" 
+" Use less width for tabs.
+"
+" Found on https://stackoverflow.com/a/57708527.
 set tabstop=2
 set shiftwidth=2
 
-" Turn on auto indent.
-" Found on https://unix.stackexchange.com/a/19946.
-set autoindent
-
-" Turn on cindent, i.e. automatically insert an indent after braces, parentheses, etc.
-" Found on https://stackoverflow.com/a/59860142.
+" 
+" Use automatic indent.
+"
+" Found on https://linuxhint.com/use-auto-indent-in-vim/. 
 set cindent
 
-" Show line number.
-" Found on https://www.cyberciti.biz/faq/how-to-display-line-number-in-vim/.
-set number
-
+"
 " Disable line wrapping.
-" Found on https://stackoverflow.com/questions/1290285/why-cant-i-stop-vim-from-wrapping-my-code. 
+"
+" Found on https://stackoverflow.com/questions/1290285/why-cant-i-stop-vim-from-wrapping-my-code.
 set textwidth=0
 set wrapmargin=0
 set wrap!
 
-" Set ultisnip triggers.
-" Found on https://github.com/SirVer/ultisnips.
-" ENTER is used instead of TAB because the latter is reserved by YouCompleteMe menu.
-"let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsExpandTrigger="<CR>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" Enable delimitMate code block indentation.
-" Found on https://stackoverflow.com/questions/9621173/vim-and-indentation-with-brackets-braces.
-let g:delimitMate_expand_cr = 1
-
-" Enable indent guides.
-" Found on https://github.com/preservim/vim-indent-guides.
-let g:indent_guides_enable_on_vim_startup = 1
-colorscheme gruvbox
-set background=dark
-
-" Enable wilder wildmenu.
-" Found on https://github.com/gelguy/wilder.nvim.
-call wilder#setup({'modes': [':', '/', '?']})
-call wilder#set_option('renderer', wilder#popupmenu_renderer({
-      \ 'highlighter': wilder#basic_highlighter(),
-      \ }))
-
-" Start NERDTree and put the cursor back in the other window.
-" Found on https://vimawesome.com/plugin/nerdtree-red.
-autocmd VimEnter * NERDTree | wincmd p
-
-" Use gruvbox theme.
-" Found on https://github.com/morhetz/gruvbox/wiki/Installation.
-autocmd vimenter * ++nested colorscheme gruvbox
-
-" Enable mouse.
-" Found on https://vimtricks.com/p/using-a-mouse-in-vim/.
-set mouse=a
