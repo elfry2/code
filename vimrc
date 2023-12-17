@@ -67,11 +67,21 @@ set cindent
 " Found on https://www.cyberciti.biz/faq/how-to-display-line-number-in-vim/.
 set number
 
-" Display vertical line at each indentation level
-" Found on https://vimawesome.com/plugin/indentline
+" Display vertical line at each indentation level.
+" Found on https://vimawesome.com/plugin/indentline.
 :set list lcs=tab:\|\ 
+
+" Disable line wrapping.
+" Found on https://stackoverflow.com/questions/1290285/why-cant-i-stop-vim-from-wrapping-my-code. 
+set textwidth=0
+set wrapmargin=0
+set wrap!
 
 " Set ultisnip triggers.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Enable delimitMate code block indentation.
+" Found on https://stackoverflow.com/questions/9621173/vim-and-indentation-with-brackets-braces.
+let g:delimitMate_expand_cr = 1
