@@ -67,6 +67,10 @@ set cindent
 " Found on https://www.cyberciti.biz/faq/how-to-display-line-number-in-vim/.
 set number
 
+" Display vertical line at each indentation level
+" Found on https://vimawesome.com/plugin/indentline
+:set list lcs=tab:\|\ 
+
 " Set ultisnip triggers.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
