@@ -20,3 +20,7 @@ Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim) and 
 - ```<ESC>``` -> ```jk``` in insert and visual mode
 - Toggle NERDTree -> ```tr``` in normal mode
 - Expand snippets -> ```;``` in insert mode
+
+## Troubleshooting
+### Airline arrows not showing; only rectangles
+See [this issue](https://github.com/vim-airline/vim-airline/issues/1688).

@@ -55,3 +55,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Found on https://github.com/preservim/vim-indent-guides.
 colorscheme gruvbox 
 set background=dark
+
+"
+" Enable airline 'arrows'.
+"
+" Found on https://github.com/vim-airline/vim-airline/issues/1688.
+let g:airline_powerline_fonts = 1
