@@ -1,22 +1,39 @@
 #!/bin/bash
 
 # Attempt to install vim with scripting language support using APT.
-sudo apt install --assume-yes vim-gtk3
+sudo apt install --assume-yes vim-gtk3 python3-dev
 
-# Remove old vim directory.
-sudo rm -rv ~/.vim
+# Backup the current .vimrc
+mv -v ~/.vimrc ~/.vimrc.backup
 
-# Install vim-plug.
-mkdir -p ~/.vim/autoload
-wget -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# Install Vundle.
+sudo rm -rv ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# Copy the vimrc to home directory.
-cp -v vimrc ~/.vimrc
+# Copy the new vimrc to home directory.
+cp -v 1.vimrc ~/.vimrc
 
 # Copy the plugin list file to home directory.
-cp -v plugs ~/.vim/plugs
+cp -v vundles ~/.vim/vundles
 
 # Install plugins.
-vim +PlugInstall +qa
+vim +PluginInstall +qall
+
+# Append the content of vimrc2 to the new vimrc.
+cat 2.vimrc >> ~/.vimrc
+
+# Compile plugins.
+if [ ! "$1" == "--no-compile" ]; then
+	# Compile YouCompleteMe
+	sudo mkdir -p /etc/apt/keyrings
+	sudo rm -v /etc/apt/keyrings/nodesource.gpg
+	curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+	echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_current.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+	sudo apt install --assume-yes build-essential cmake python3-dev mono-complete golang nodejs openjdk-17-jdk openjdk-17-jre npm #vim-nox
+	origin="$(pwd)"
+	cd ~/.vim/bundle/YouCompleteMe
+	python3 install.py --all
+	cd "${origin}"
+fi
 
 echo "kaku installed."
