@@ -49,7 +49,7 @@ filetype plugin indent on    " required
 " Non-plugin-manager configuration goes below.
 " Before adding anything, check whether there's already a plugin to do
 " the task.
-" Plugins are to be registered in ~/.vim/vundles .
+" Plugins are to be managed using Vundle and registered in ~/.vim/vundles .
 
 " Turn on syntax highlighting.
 " Found in https://linuxhandbook.com/syntax-highlight-vim/.
