@@ -4,10 +4,17 @@ The perfect code editor--not. It's a script to automate the installation of my v
 ![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-18%2004-24-26.png "A screenshot of the latest version")
 
 ## Installation
-To install poem and compile all plugins that need compilation, execute ```git clone https://github.com/elfry2/poem.git && cd poem && ./main```. The compilation takes quite some time, so you may want to skip it later after running it once by appending ```--no-compile```.
+Be aware that installing poem overwrites your current ```~/.vimrc```. To install poem and compile all plugins that need compilation, execute 
+```bash
+git clone https://github.com/elfry2/poem.git && cd poem && ./main
+```
+The compilation takes quite some time, so you may want to skip it later after running it once by appending ```--no-compile```.
 
 ## Usage
-Execute ```vim```.
+Execute
+```bash
+vim
+```
 
 To learn vim basics, read [this article](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-vim-101-a-beginners-guide-to-vim).
 
