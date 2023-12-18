@@ -1,7 +1,7 @@
 # poem
 The perfect code editor--not. It's a script to automate the installation of my vim configuration on Debian.
 
-![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-19%2000-42-30.png "A screenshot of the latest version")
+![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-19%2001-17-21.png "A screenshot of the latest version")
 
 ## Installation
 Be aware that installing poem overwrites your current ```~/.vimrc```. To install poem and compile all plugins that need compilation, execute 

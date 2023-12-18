@@ -61,3 +61,9 @@ set background=dark
 "
 " Found on https://github.com/vim-airline/vim-airline/issues/1688.
 let g:airline_powerline_fonts = 1
+
+" 
+" Use airline tabline.
+"
+" Found on https://github.com/vim-airline/vim-airline.
+let g:airline#extensions#tabline#enabled = 1

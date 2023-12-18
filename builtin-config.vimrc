@@ -50,4 +50,8 @@ syntax on
 " Found on https://vimtricks.com/p/using-a-mouse-in-vim/.
 set mouse=a
 
-
+" 
+" Use UTF-8 encoding. Requested by vim-devicons.
+"
+" Found on https://github.com/ryanoasis/vim-devicons.
+set encoding=UTF-8
