@@ -1,12 +1,12 @@
-# poem
+# code
 The perfect code editor--not. It's a script to automate the installation of my vim configuration on Debian.
 
 ![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-19%2001-17-21.png "A screenshot of the latest version")
 
 ## Installation
-Be aware that installing poem overwrites your current ```~/.vimrc```. To install poem and compile all plugins that need compilation, execute 
+Be aware that installing code overwrites your current ```~/.vimrc```. To install code and compile all plugins that need compilation, execute 
 ```bash
-git clone https://github.com/elfry2/poem.git && cd poem && ./main
+git clone https://github.com/elfry2/code.git && cd code && ./main
 ```
 The compilation takes quite some time, so you may want to skip it later after running it once by appending ```--no-compile```.
 
