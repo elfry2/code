@@ -44,4 +44,4 @@ if [ ! "$1" == "--no-compile" ]; then
 	cd "${origin}"
 fi
 
-echo "poem installed."
+echo "code installed."
