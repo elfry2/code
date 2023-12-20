@@ -29,7 +29,7 @@ call vundle#begin()
 
 " All of your Plugins must be added before the following line
 
-source ~/.vim/vundles
+source ~/.vim/vundles.vim
 
 call vundle#end()            " required
 filetype plugin indent on    " required

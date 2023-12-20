@@ -18,7 +18,7 @@ sudo rm -rv ~/.vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Copy the new vimrc to home directory.
-cp -v vundle-init.vim ~/.vimrc
+cp -v init.vim ~/.vimrc
 
 # Copy the plugin list file to home directory.
 cp -v vundles.vim ~/.vim/vundles.vim
