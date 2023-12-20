@@ -1,5 +1,5 @@
 # code
-The perfect code editor--not. It's a script to automate the installation of my vim configuration on Debian.
+The perfect code editor--not. It's a script to install my vim configuration on Debian.
 
 ![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-19%2001-17-21.png "A screenshot of the latest version")
 
