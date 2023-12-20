@@ -1,6 +1,8 @@
 # code
 The perfect code editor--not. It's a script to install my vim configuration on Debian.
 
+My Neovim configuration can be found [here](https://github.com/elfry2/newcode).
+
 ![A screenshot of the latest version](screenshots/Screenshot%20from%202023-12-19%2001-17-21.png "A screenshot of the latest version")
 
 ## Installation
