@@ -21,7 +21,7 @@ To learn vim basics, read [this article](https://www.linuxfoundation.org/blog/bl
 To learn how to use plugins, read [this article](https://opensource.com/article/20/2/how-install-vim-plugins).
 
 ## Configuration
-Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim) and registered in ```~/.vim/vundles```.
+Plugins are managed using [Vundle](https://github.com/VundleVim/Vundle.vim) and registered in ```~/.vim/vundles.vim```.
 
 ## Remaps 
 - ```<ESC>``` -> ```jk``` in insert and visual mode
