@@ -8,7 +8,7 @@ sudo fc-cache -fv
 rm -rv hacknerd.zip
 
 # Attempt to install vim with scripting language support using APT.
-sudo apt install --assume-yes vim-gtk3 python3-dev fonts-powerline
+sudo apt install --assume-yes vim-gtk3 python3-dev
 
 # Backup the current .vimrc .
 mv -v ~/.vimrc ~/.vimrc.backup
@@ -18,17 +18,17 @@ sudo rm -rv ~/.vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Copy the new vimrc to home directory.
-cp -v vundle-init.vimrc ~/.vimrc
+cp -v vundle-init.vim ~/.vimrc
 
 # Copy the plugin list file to home directory.
-cp -v vundles ~/.vim/vundles
+cp -v vundles.vim ~/.vim/vundles.vim
 
 # Install plugins.
 vim +PluginInstall +qall
 
 # Append the remaining vimrc's.
-cat plugin-config.vimrc >> ~/.vimrc
-cat builtin-config.vimrc >> ~/.vimrc
+cat plugin-config.vim >> ~/.vimrc
+cat builtin-config.vim >> ~/.vimrc
 
 # Compile plugins.
 if [ ! "$1" == "--no-compile" ]; then
